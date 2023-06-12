@@ -42,3 +42,24 @@ a {
 a:hover {
   color: ghostwhite;
 }
+
+ #middle {
+z-index: -1;
+}
+#top,
+#bottom {
+  top:0px;
+  left:0px;
+}
+
+@keyframes #top{
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
