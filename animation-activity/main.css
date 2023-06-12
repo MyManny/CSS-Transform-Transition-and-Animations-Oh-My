@@ -46,20 +46,37 @@ a:hover {
  #middle {
 z-index: -1;
 }
-#top,
-#bottom {
-  top:0px;
-  left:0px;
-}
 
-@keyframes #top{
-  0% {
-    transform: rotate(0deg);
+
+  
+  @keyframes rotateX {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(50deg);
+      
+    }
+    100% {
+      transform: rotate(0deg);
+    }
   }
-  50% {
-    transform: rotate(45deg);
+  #top {
+    animation: rotateX 2s infinite;
+    
   }
-  100% {
-    transform: rotate(0deg);
+  #bottom {
+    animation: rotateP 2s infinite;
   }
-}
+  
+  @keyframes rotateP  {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(-50deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
