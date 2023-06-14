@@ -43,40 +43,9 @@ a:hover {
   color: ghostwhite;
 }
 
- #middle {
-z-index: -1;
-}
 
 
   
-  @keyframes rotateX {
-    0% {
-      transform: rotate(0deg);
-    }
-    50% {
-      transform: rotate(50deg);
-      
-    }
-    100% {
-      transform: rotate(0deg);
-    }
-  }
-  #top {
-    animation: rotateX 2s infinite;
-    
-  }
-  #bottom {
-    animation: rotateP 2s infinite;
-  }
+ 
+
   
-  @keyframes rotateP  {
-    0% {
-      transform: rotate(0deg);
-    }
-    50% {
-      transform: rotate(-50deg);
-    }
-    100% {
-      transform: rotate(0deg);
-    }
-  }
